@@ -65,6 +65,10 @@ touchscreendraggables.forEach((draggable) => {
   draggable.addEventListener("touchmove", handleTouchMove, { passive: true });
   draggable.addEventListener("touchend", handleTouchEnd);
 });
+// Empêcher le zoom
+document.addEventListener('gesturestart', function (e) {
+  e.preventDefault();
+});
 
 /*
 // SOURIS
