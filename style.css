@@ -1,0 +1,64 @@
+/* style général de la page */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-primary: #182534;
+    --color-yellow: #ffff00;
+    --color-green: #1dd2af;
+    --transparent: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background: var(--color-primary);
+  color: var(--color-green);
+  min-height: 100vh;
+}
+.grid-container {
+    width: 75rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.dropzone {
+    min-height: 5rem;
+    background-color: var(--color-transparent);
+    border: 0.25rem solid var(--color-yellow);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.dropzone1 {
+    background-color: var(--color-transparent);
+    border: 0.25rem solid var(--color-green);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.dropzone-column {
+    display: flex;
+    flex-direction: column;
+}
+.draggable {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.25rem solid var(--color-yellow);
+    border-radius: 50%;
+    background-color: var(--color-transparent);
+    color: var(--color-yellow);
+}
+.draggable:hover {
+    background-color: var(--color-green);
+}
