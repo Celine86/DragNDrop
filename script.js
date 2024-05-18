@@ -32,7 +32,7 @@ function handleTouchMove(e) {
   target.style.left = newX + "px";
   target.style.top = newY + "px";
   // Désactiver le scroll auto en n'appelant pas e.preventDefault
-  e.preventDefault();
+  // e.preventDefault();
 }
 function handleTouchEnd(e) {
   const target = e.target;
