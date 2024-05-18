@@ -62,3 +62,25 @@ body {
 .draggable:hover {
     background-color: var(--color-green);
 }
+/* PHONE */
+@media only screen and (min-device-width: 480px){
+    .dropzone {
+        min-height: 2rem;
+    }
+    .draggable {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem;
+    }
+}
+/* TABLET */
+@media only screen and (min-device-width: 768px){
+    .dropzone {
+        min-height: 3rem;
+    }
+    .draggable {
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem;
+    }
+}
