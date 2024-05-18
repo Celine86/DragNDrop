@@ -64,6 +64,9 @@ body {
 }
 /* PHONE */
 @media only screen and (min-device-width: 480px){
+    .grid-container {
+        width: 460px;
+    }
     .dropzone {
         min-height: 2rem;
     }
@@ -75,6 +78,9 @@ body {
 }
 /* TABLET */
 @media only screen and (min-device-width: 768px){
+    .grid-container {
+        width: 748px;
+    }
     .dropzone {
         min-height: 3rem;
     }
