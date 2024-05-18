@@ -66,7 +66,7 @@ h1 {
     background-color: var(--color-green);
 }
 /* PHONE */
-@media only screen and (min-device-width: 480px){
+@media (max-width: 480px){
     .grid-container {
         width: 460px;
     }
@@ -80,7 +80,7 @@ h1 {
     }
 }
 /* TABLET */
-@media only screen and (min-device-width: 768px){
+@media (max-width: 768px){
     .grid-container {
         width: 748px;
     }
